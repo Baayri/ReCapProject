@@ -28,11 +28,6 @@ namespace Business.Concrete
             _brandDal.Delete(brand);
         }
 
-        public Brand Get(int brandId)
-        {
-            return _brandDal.Get(brand => brand.Id == brandId);
-        }
-
         public List<Brand> GetAll()
         {
             return _brandDal.GetAll();

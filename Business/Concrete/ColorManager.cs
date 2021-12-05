@@ -30,11 +30,6 @@ namespace Business.Concrete
             Console.WriteLine("Color deleted");
         }
 
-        public Color Get(int colorId)
-        {
-            return _colorDal.Get(color => color.Id == colorId);
-        }
-
         public List<Color> GetAll()
         {
             return _colorDal.GetAll();
